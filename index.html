@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <main class="music-container">
+        <div class="img-container">
+            <img src="img/We Rollin.jpg" alt="Song's img" class="music-img">
+        </div>
+
+
+        <div class="music-info">
+            <h2 class="music-name"></h2>
+            <h4 class="music-singer"></h4>
+        </div>
+
+
+        <div class="progress-container">
+            <!-- <div class="progress-time">
+                <p class="start">00</p>
+                <p class="end">5.0</p>
+            </div> -->
+            <div class="progress-box">
+                <div class="progress"></div>
+            </div>
+        </div>
+
+
+        <div class="control-btns">
+            <i class="fa-solid fa-backward prev"></i>
+            <i class="fa-solid fa-play play"></i>
+            <i class="fa-solid fa-forward next"></i>
+        </div>
+        <audio src="songs/Affair.mp3" class="audio"></audio>
+      </main>
+    
+
+
+      <script src="index.js"></script>
+</body>
+</html>

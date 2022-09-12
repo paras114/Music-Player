@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  /* background-color:  rgb(28, 29, 35); */
+  ;
+}
+.music-container {
+  background-color: #fff;
+  width: 90%;
+  min-height: 70h;
+  max-width: 20rem;
+  /* border: 2px solid; */
+  padding: 1.2rem 1.2rem 2.5rem 1.2rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-container {
+  width: 100%;
+  height: 20rem;
+  /* overflow: hidden; */
+  border-radius: 1.2rem;
+  position: relative;
+  object-fit: cover;
+}
+.music-img {
+  width: 100%;
+  height: inherit;
+  border-radius: 1.2rem;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.music-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 0 1rem 0;
+  /* border: 2px solid; */
+  /* line-height: 1.5; */
+}
+.music-info h2{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(28, 29, 35);
+  text-align: center;
+  /* line-height: 1.; */
+  margin-bottom: .5rem;
+
+}
+.music-info h4{
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(66, 66, 66);
+}
+.progress-container {
+  width: 100%;
+  /* height: ; */
+  padding: 1rem 1rem;
+}
+.progress-time {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.progress-box {
+  background-color: rgb(227, 227, 227);
+  width: 100%;
+  height: 5px;
+  border-radius: 1.2rem;
+  /* box-shadow: 0 .2rem .2rem rgba(68, 68, 68, 0.2); */
+  cursor: pointer;
+}
+.progress {
+  background-color: orangered;
+  width: 0%;
+  height: inherit;
+  border-radius: 1.2rem;
+  position: relative;
+  transition: width .2s linear;
+}
+
+.control-btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa-solid {
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: rgb(28, 29, 35);
+
+}
+.fa-solid:hover,.fa-solid:active{
+  color: orangered;
+}
+.play {
+  margin: 0 2.5rem;
+  font-size: 1.9rem;
+  width: 2.8rem;
+  height: 2.8rem;
+  background-color: orangered;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.play:hover,.play:active{
+  color: #fff;
+}
+.fa-play{
+  padding-left: .3rem;
+  font-size: 1.72rem;
+
+}
+
+
+
+/* media*/
+@media  (max-width:400px){
+  .music-container{
+    /* background-color: rgb(28, 29, 35); */
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ .img-container{
+  height: 27rem;
+  width: 85%;
+  border-radius: .5rem;
+  display: flex;
+  
+ }
+ .music-img{
+  border-radius: .5rem;
+ }
+ .control-btns{
+  /* border: 2px solid; */
+  margin-top: 1.7rem;
+ }
+ .fa-solid{
+   font-size: 2rem;
+ }
+ .play{
+  margin: 0 5rem;
+  font-size: 2.7rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  
+ }
+}
